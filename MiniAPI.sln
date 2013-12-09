@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniAPI", "MiniAPI\MiniAPI.csproj", "{E67CD90F-D826-44AF-B1E3-DEE0F2DEA32C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E67CD90F-D826-44AF-B1E3-DEE0F2DEA32C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E67CD90F-D826-44AF-B1E3-DEE0F2DEA32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E67CD90F-D826-44AF-B1E3-DEE0F2DEA32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E67CD90F-D826-44AF-B1E3-DEE0F2DEA32C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
