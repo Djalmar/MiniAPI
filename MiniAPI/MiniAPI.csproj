@@ -173,9 +173,9 @@
     </Compile>
     <Compile Include="Models\APIFunctions.cs" />
     <Compile Include="Models\MiniContext.cs" />
+    <Compile Include="Models\Problema.cs" />
     <Compile Include="Models\Repositories\RutaRepository.cs" />
     <Compile Include="Models\Ruta.cs" />
-    <Compile Include="Models\Tiene.cs" />
     <Compile Include="Models\Tramo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

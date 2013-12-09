@@ -6,22 +6,24 @@ using System.Web;
 
 namespace MiniAPI.Models
 {
-    public class MiniContext:DbContext
+    public class MiniContext : DbContext
     {
-        private static MiniContext db;
+        private static MiniContext db=new MiniContext();
 
         public static MiniContext DB
         {
             get { return db; }
             set { db = value; }
         }
-        
+
         public DbSet<Ruta> Ruta { get; set; }
         public DbSet<Tramo> Tramo { get; set; }
-        public DbSet<CoordenadasTramo> Coordenada { get; set; }
-        public MiniContext():base()
+        public DbSet<Problema> Problema { get; set; }
+
+        public MiniContext()
+            : base()
         {
-                
+
         }
     }
     public class MiniInitaializer : CreateDatabaseIfNotExists<MiniContext>
@@ -32,15 +34,23 @@ namespace MiniAPI.Models
                 new Ruta()
                 {
                     Numero = "331",
-                    Rutas = new List<Tramo>()
+                    Tramos = new List<Tramo>()
                     {
                         new Tramo()
                         {
                             Nombre="Camacho",
                             XOrigen=0,
-                            YOrigen=1,
+                            YOrigen=0,
                             XDestino=1,
                             YDestino=1
+                        },
+                        new Tramo()
+                        {
+                            Nombre="Stadium",
+                            XOrigen=1,
+                            YOrigen=1,
+                            XDestino=2,
+                            YDestino=2
                         }
                     }
                 }

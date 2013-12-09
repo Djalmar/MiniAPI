@@ -10,7 +10,12 @@ namespace MiniAPI.Models
     {
         public int RutaID { get; set; }
         public string Numero { get; set; }
-        public IEnumerable<Tramo> Rutas { get; set; }
-        public IEnumerable<CoordenadasTramo> Coordenadas { get; set; }
+
+        public virtual ICollection<Tramo> Tramos { get; set; }
+
+        public Ruta()
+        {
+            Tramos = new HashSet<Tramo>();
+        }
     }
 }
